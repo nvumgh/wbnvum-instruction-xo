@@ -65,6 +65,9 @@
       border-radius: 16px;
       position: relative;
       z-index: 4;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer a {
@@ -74,18 +77,18 @@
 
     .bg-image {
       position: absolute;
-      z-index: 1;
+      z-index: 3;
       opacity: 0.35;
     }
 
     .bg-pink {
-      bottom: 150px;
+      bottom: 280px; /* подняли выше */
       left: 5%;
       width: 157px;
     }
 
     .bg-yellow {
-      bottom: 180px;
+      bottom: 300px; /* подняли выше */
       right: 5%;
       width: 240px;
     }
@@ -98,15 +101,6 @@
       margin-top: 60px;
       position: relative;
       z-index: 3;
-    }
-
-    .gradient-to-white {
-      height: 80px;
-      margin-top: -40px;
-      background: linear-gradient(to bottom, rgba(255, 122, 198, 0.8), #fff);
-      border-radius: 0 0 16px 16px;
-      z-index: 2;
-      position: relative;
     }
   </style>
 </head>
@@ -145,8 +139,6 @@
       Нажимайте на подсвеченные кружки как можно быстрее.<br>
       После исчезновения всех — переход на следующий уровень.</p>
     </div>
-
-    <div class="gradient-to-white"></div>
 
     <div class="section recommendation-box">
       <h2>🛍 Рекомендуем в нашем магазине</h2>
