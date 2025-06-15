@@ -50,6 +50,9 @@
 
     .section {
       margin-bottom: 30px;
+      position: relative;
+      z-index: 2;
+      color: #000;
     }
 
     ul {
@@ -77,18 +80,18 @@
 
     .bg-image {
       position: absolute;
-      z-index: 3;
-      opacity: 0.35;
+      z-index: 1;
+      opacity: 1;
     }
 
     .bg-pink {
-      bottom: 580px; /* подняли выше */
+      bottom: 580px;
       right: 5%;
       width: 157px;
     }
 
     .bg-yellow {
-      bottom: 700px; /* подняли выше */
+      bottom: 700px;
       right: 5%;
       width: 240px;
     }
@@ -100,7 +103,8 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
       margin-top: 60px;
       position: relative;
-      z-index: 3;
+      z-index: 2;
+      color: #000;
     }
   </style>
 </head>
