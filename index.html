@@ -14,6 +14,8 @@
       margin: 0;
       padding: 20px;
       line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
     }
     h1 {
       color: #111;
@@ -28,6 +30,8 @@
     .container {
       max-width: 800px;
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
     }
     .button {
       display: inline-block;
@@ -48,18 +52,36 @@
     footer {
       margin-top: 40px;
       padding: 20px;
-      background-color: #444;
+      background-color: #666;
       color: #fff;
       text-align: center;
-      border-radius: 16px 16px 0 0;
+      border-radius: 16px;
     }
     footer a {
       color: #fff;
       text-decoration: underline;
     }
+    .bg-image {
+      position: absolute;
+      z-index: 1;
+      opacity: 0.25;
+    }
+    .bg-pink {
+      top: 100px;
+      right: 10%;
+      width: 200px;
+    }
+    .bg-yellow {
+      bottom: 100px;
+      left: 10%;
+      width: 200px;
+    }
   </style>
 </head>
 <body>
+  <img src="pink_toy.png" alt="pink toy" class="bg-image bg-pink" />
+  <img src="yellow_toy.png" alt="yellow toy" class="bg-image bg-yellow" />
+
   <div class="container">
     <h1><strong>Инструкция к электронной настольной игре "Крестики-нолики"</strong></h1>
 
